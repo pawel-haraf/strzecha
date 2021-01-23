@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 // Header section
@@ -36,8 +37,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  padding: 16px 16px 16px 400px;
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 16px 0 16px 400px;
   margin: 0;
   &__link{
     color: #000000;
