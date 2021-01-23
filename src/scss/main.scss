@@ -4,10 +4,75 @@
 @import "modules/hello.scss";
 
 body {
-  background: $wtf;
-  color: #fff;
+  background: #E5E5E5;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  min-height: 60px;
+  &__title {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.navigation {
+  background: #AFE3A2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 16px 16px 16px 400px;
+  margin: 0;
+  &__link{
+    color: #000000;
+    font-size: 24px;
+    display: inline-block;
+    margin: 45px 56px 45px 0;
+    text-decoration: none;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__header {
+    margin: 10px 0 0 300px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 300;
+    color: #687631;
+  }
+  &__description {
+    margin: 0 0 30px 300px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 300;
+    color: #4F7B56;
+    margin-top: 0;
+  }
+  &__image {
+    position: absolute;
+    top: 9px;
+    left: 65px;
+  }
+  &__picture {
+    margin: 25px;
+    width: 95vw;
+  }
 }
