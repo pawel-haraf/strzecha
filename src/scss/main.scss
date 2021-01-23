@@ -6,10 +6,12 @@
 body {
   background: #E5E5E5;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 100vw;
 }
+
+// Header section
 
 .header {
   width: 100vw;
@@ -20,7 +22,7 @@ body {
   z-index: 100;
   min-height: 60px;
   &__title {
-    width: 100vw;
+    width: 90vw;
     position: relative;
     display: flex;
     align-items: center;
@@ -72,7 +74,32 @@ body {
     left: 65px;
   }
   &__picture {
-    margin: 25px;
     width: 95vw;
+  }
+}
+
+// About-us section
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1050px;
+  &__header {
+    font-size: 48px;
+    color: #687631;
+    font-weight: 300;
+    margin: 25px;
+  }
+  &__description {
+    font-size: 24px;
+    color: #4F7B56;
+    margin: 0 25px 25px 25px;
+    text-align: justify;
+  }
+  &__link {
+    color: #687631;
+    text-decoration: none;
   }
 }
