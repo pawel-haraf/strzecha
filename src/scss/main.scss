@@ -20,6 +20,16 @@ body {
 }
 
 // Header section
+.hamburger {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
 
 .header {
   display: flex;
@@ -54,7 +64,9 @@ body {
 }
 
 .navigation {
-  display: flex;
+  position: fixed;
+  top: 0;
+  display: none;
   align-items: center;
   justify-content: center;
   background: #afe3a2;
@@ -65,9 +77,16 @@ body {
     font-size: 24px;
     text-decoration: none;
     margin: 8px;
+    &:hover {
+      color: #e5e5e5;
+    }
+  }
+  &--open {
+    display: block;
   }
   @media (min-width: 768px) {
-    width: 80vw;
+    display: flex;
+    width: 95vw;
     padding: 16px 0 16px 150px;
   }
   @media (min-width: 1024px) {
@@ -123,7 +142,7 @@ body {
     justify-content: center;
     order: 1;
     &__header {
-      margin: 10px 0 0 300px;
+      margin: 75px 0 0 300px;
       text-align: center;
       font-size: 48px;
       font-weight: 300;
@@ -153,7 +172,7 @@ body {
     align-items: center;
     justify-content: center;
     &__header {
-      margin: 10px 0 0 300px;
+      margin: 150px 0 0 300px;
       text-align: center;
       font-size: 48px;
       font-weight: 300;
