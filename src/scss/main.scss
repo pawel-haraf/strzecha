@@ -7,7 +7,9 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  font-family: "Open Sans", "Arial", sans-serif;
+  box-sizing: border-box;
+  font-size: 12px;
 }
 
 body {
@@ -224,7 +226,66 @@ body {
     text-align: justify;
   }
   &__link {
+    font-size: 24px;
     color: #687631;
     text-decoration: none;
   }
+}
+
+// Slider container
+
+.slider {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__previous-arrow{
+    color: #666464;
+    padding: 28px;
+    cursor: pointer;
+  }
+  &__next-arrow {
+    color: #666464;
+    padding: 28px;
+    cursor: pointer;
+  }
+  &__list{
+    list-style: none;
+    width: 500px;
+    padding: 0;
+    display: flex;
+    overflow-x: hidden;
+    &--image {
+      width: 500px;
+      border-radius: 5px;
+    }
+  }
+  &__icon {
+    font-size: 25px;
+  }
+}
+
+
+.previous-arrow,
+.next-arrow {
+  color: #666464;
+  padding: 28px;
+  cursor: pointer;
+}
+
+.previous-arrow:hover,
+.next-arrow:hover {
+  color: #9ac051;
+}
+
+.slider-stage {
+  width: 500px;
+}
+
+.slider {
+  list-style: none;
+  width: 500px;
+  padding: 0;
+  display: flex;
+  overflow-x: hidden;
 }
