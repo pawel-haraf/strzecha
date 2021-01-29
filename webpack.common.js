@@ -7,6 +7,9 @@ module.exports = {
     index: "./src/js/index.js",
     another: "./src/js/another.js",
     hamburger: "./src/js/hamburger.js",
+    brands: "./node_modules/@fortawesome/fontawesome-free/js/brands.js",
+    solid: "./node_modules/@fortawesome/fontawesome-free/js/solid.js",
+    fontawesome: "./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -80,7 +83,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index", "hamburger"],
+      chunks: ["index", "hamburger", "brands", "solid", "fontawesome"],
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
