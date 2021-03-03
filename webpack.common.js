@@ -10,6 +10,7 @@ module.exports = {
     brands: "./node_modules/@fortawesome/fontawesome-free/js/brands.js",
     solid: "./node_modules/@fortawesome/fontawesome-free/js/solid.js",
     fontawesome: "./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js",
+    slider: "./src/js/slider.js",
   },
   output: {
     filename: "[name].[hash:8].js",
@@ -83,7 +84,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       inject: true,
-      chunks: ["index", "hamburger", "brands", "solid", "fontawesome"],
+      chunks: ["index", "hamburger", "brands", "solid", "fontawesome", "slider"],
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
