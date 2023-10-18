@@ -5,7 +5,8 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "parcel src/*.html",
-		"build": "parcel build src/*.html --public-url=https://stara-strzecha.pl/"
+		"build": "parcel build src/*.html --public-url=https://starastrzecha.pl/",
+		"build-mikrus": "parcel build src/*.html --public-url=https://stara-strzecha.pl/"
 	},
 	"keywords": [],
 	"author": "",
